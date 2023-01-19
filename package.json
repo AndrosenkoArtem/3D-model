@@ -1,5 +1,5 @@
 {
-  "name": "3D-model",
+  "name": "3d-model",
   "version": "2.0.0",
   "description": "",
   "homepage": "https://AndrosenkoArtem.github.io/3D-model/",
@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
-    "parcel": "^2.6.0",
+    "parcel": "^2.8.3",
     "parcel-reporter-clean-dist": "^1.0.4",
     "posthtml-include": "^1.7.4"
   },
