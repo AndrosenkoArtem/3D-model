@@ -23,7 +23,27 @@
           з технологією 3D друку і просто помилуватися красою цього процесу.
         </p>
         <p class="contact__subtitle">Приємного перегляду!</p>
-        <img class="contact__icon" src="./images/emoji.png" alt="" />
+        <picture>
+          <source
+            srcset="
+              ./images/take-order/emoji.png    1x,
+              ./images/take-order/emoji@2x.png 2x
+            "
+            media="(max-width: 1439px)"
+          />
+          <source
+            srcset="
+              ./images/take-order/emoji-desctop.png    1x,
+              ./images/take-order/emoji-desctop@2x.png 2x
+            "
+            media="(min-width: 1400px)"
+          />
+          <img
+            class="contact__icon"
+            src="./images/take-order/emoji-desctop.png"
+            alt=""
+          />
+        </picture>
       </li>
     </ul>
     <div class="contact__group">

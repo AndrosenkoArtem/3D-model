@@ -28,11 +28,35 @@
         </p>
       </li>
       <li class="scanning__item">
-        <img
-          class="scanning__img"
-          src="./images/Scanning-main.jpg"
-          alt="statuette"
-        />
+        <picture>
+          <source
+            srcset="
+              ./images/scanning/scanning-main-mobile.png    1x,
+              ./images/scanning/scanning-main-mobile@2x.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="
+              ./images/scanning/scanning-main-tablet.png    1x,
+              ./images/scanning/scanning-main-tablet@2x.png 2x
+            "
+            media="(min-width: 768px) and (max-width: 1439px)"
+          />
+          <source
+            srcset="
+              ./images/scanning/scanning-main.png    1x,
+              ./images/scanning/scanning-main@2x.png 2x
+            "
+            media="(min-width: 1400px)"
+          />
+          <img
+            loading="lazy"
+            class="scanning__img"
+            src="./images/scanning/Scanning-main.png"
+            alt="statuette"
+          />
+        </picture>
       </li>
     </ul>
   </div>

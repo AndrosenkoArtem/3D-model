@@ -3,7 +3,35 @@
     <h2 class="order__title">ЗРОБИТИ ЗАМОВЛЕННЯ</h2>
     <ul class="order__list">
       <li class="order__item">
-        <img class="order__img" src="./images/order-1.jpg" alt="" />
+        <picture>
+          <source
+            srcset="
+              ./images/take-order/order-1-mobile.jpg    1x,
+              ./images/take-order/order-1-mobile@2x.jpg 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="
+              ./images/take-order/order-1-tablet.jpg    1x,
+              ./images/take-order/order-1-tablet@2x.jpg 2x
+            "
+            media="(min-width: 768px) and (max-width: 1439px)"
+          />
+          <source
+            srcset="
+              ./images/take-order/order-1.jpg    1x,
+              ./images/take-order/order-1@2x.jpg 2x
+            "
+            media="(min-width: 1400px)"
+          />
+          <img
+            loading="lazy"
+            class="order__img"
+            src="./images/take-order/order-1.jpg"
+            alt="model-1"
+          />
+        </picture>
       </li>
       <li class="order__item">
         <p class="order__subtitle order__subtitle--margin">
@@ -18,13 +46,55 @@
       <li class="order__item">
         <ul class="model">
           <li class="model__item">
-            <img class="model__img" src="./images/order-2.png" alt="" />
+            <picture>
+              <source
+                srcset="
+                  ./images/take-order/order-2.png    1x,
+                  ./images/take-order/order-2@2x.png 2x
+                "
+                media="(min-width: 1400px)"
+              />
+              <img
+                loading="lazy"
+                class="model__img"
+                src="./images/take-order/order-2.png"
+                alt="model-2"
+              />
+            </picture>
           </li>
           <li class="model__item">
-            <img class="model__img" src="./images/order-3.png" alt="" />
+            <picture>
+              <source
+                srcset="
+                  ./images/take-order/order-3.png    1x,
+                  ./images/take-order/order-3@2x.png 2x
+                "
+                media="(min-width: 1400px)"
+              />
+              <img
+                loading="lazy"
+                class="model__img"
+                src="./images/take-order/order-3.png"
+                alt="model-3"
+              />
+            </picture>
           </li>
           <li class="model__item">
-            <img class="model__img" src="./images/order-4.png" alt="" />
+            <picture>
+              <source
+                srcset="
+                  ./images/take-order/order-4.png    1x,
+                  ./images/take-order/order-4@2x.png 2x
+                "
+                media="(min-width: 1400px)"
+              />
+              <img
+                loading="lazy"
+                class="model__img"
+                src="./images/take-order/order-4.png"
+                alt=""
+              />
+            </picture>
           </li>
         </ul>
       </li>

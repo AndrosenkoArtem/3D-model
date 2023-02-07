@@ -1,10 +1,12 @@
 .modal-window {
+  overflow-y: noscroll;
   @media screen and (max-width: 1439px) {
     position: absolute;
-    top: 100%;
+    top: 98%;
     left: 50%;
     width: 100vw;
     height: 100vh;
+    padding-top: 66px;
     transform: translatex(-50%) translatey(50%) translateY(-300%);
     transition: 400ms ease;
     background-color: #0000;
@@ -70,27 +72,5 @@
     width: 18px;
     height: 18px;
     margin-left: 38px;
-  }
-}
-.hero__icon--position {
-  top: 0px;
-  left: 12px;
-}
-.mobile {
-  position: relative;
-  left: 138px;
-  bottom: 127px;
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-  @media screen and (min-width: 1000px) and (max-width: 1439px) {
-    left: 400px;
-  }
-  @media screen and (min-widht: 1440px) {
-    display: none;
-  }
-  &__icon {
-    width: 9px;
-    height: 14px;
   }
 }

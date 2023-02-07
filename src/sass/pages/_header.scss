@@ -63,7 +63,7 @@ body {
   padding-bottom: 54px;
   @media screen and (max-width: 1439px) {
     padding-top: 28px;
-    padding-bottom: 46px;
+    padding-bottom: 0px;
     justify-content: center;
   }
 }
@@ -85,6 +85,9 @@ body {
     font-size: 18px;
     line-height: 21px;
     letter-spacing: 0.01em;
+    &:hover {
+      color: $blue-text-color;
+    }
   }
   // .site-nav__item
 
@@ -143,7 +146,11 @@ body {
       font-family: $font400;
       font-size: 18px;
       line-height: 21px;
+      &:hover {
+        color: $blue-text-color;
+      }
       @media screen and (max-width: 1439px) {
+        display: none;
         margin-bottom: 24px;
         color: $blue-text-color;
         font-family: $cera700;
@@ -172,6 +179,9 @@ body {
       margin-left: auto;
       margin-right: auto;
       width: 150px;
+      &:hover {
+        color: $blue-text-color;
+      }
       &:last-child {
         border-bottom-left-radius: 7px;
         border-bottom-right-radius: 7px;

@@ -94,6 +94,10 @@
     letter-spacing: 0.1em;
     box-shadow: -5px -5px 10px 0px #ffffff, 5px 5px 10px 0px #48799640,
       10px 10px 20px 0px #4879961a, -10px -10px 20px 0px #ffffff;
+    &:hover {
+      color: #f5f5fa;
+      background-color: $blue-text-color;
+    }
     @media screen and (max-width: 767px) {
       margin-bottom: 0px;
       padding: 16px 25px;

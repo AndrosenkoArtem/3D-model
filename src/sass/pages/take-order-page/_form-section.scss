@@ -11,6 +11,20 @@
     font-size: 36px;
     line-height: 45px;
     letter-spacing: 0em;
+    @media screen and (max-width: 767px) {
+      margin: 0px;
+      margin-bottom: 16px;
+      font-size: 18px;
+      line-height: 23px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+      text-align: center;
+      margin: 0px;
+      margin-bottom: 35px;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 30px;
+    }
   }
 
   // .form__list
@@ -19,6 +33,18 @@
     position: relative;
     width: 555px;
     margin-left: 117px;
+    @media screen and (max-width: 767px) {
+      width: 280px;
+      margin: 0px;
+      margin-bottom: 60px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+      margin: 0px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 400px;
+      margin-bottom: 60px;
+    }
   }
 
   // .form__item
@@ -136,6 +162,9 @@
   .contact-us__input-icon--position {
     right: 22px;
     bottom: 121px;
+    @media screen and (max-width: 1439px) {
+      bottom: 143px;
+    }
   }
   .contact-us__area--position {
     margin-top: 41px;
@@ -146,6 +175,9 @@
     left: auto;
     bottom: 310px;
     left: 0px;
+    @media screen and (max-width: 1439px) {
+      bottom: auto;
+    }
   }
   .contact-us__button {
     display: block;
@@ -161,6 +193,10 @@
     letter-spacing: 0.1em;
     box-shadow: -5px -5px 10px 0px #ffffff, 5px 5px 10px 0px #48799640,
       10px 10px 20px 0px #4879961a, -10px -10px 20px 0px #ffffff;
+    &:hover {
+      color: #f5f5fa;
+      background-color: $blue-text-color;
+    }
   }
 }
 .form-section {
@@ -169,22 +205,41 @@
     'title fid'
     'form  fid'
     'form  fid';
+  @media screen and (max-width: 1439px) {
+    display: block;
+  }
 }
 .feedback {
   grid-area: fid;
   text-align: end;
   margin-right: 149px;
+  padding-bottom: 52px;
+  @media screen and (max-width: 767px) {
+    margin: 0px;
+    padding-bottom: 60px;
+    text-align: start;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    margin-right: 0px;
+    display: flex;
+    justify-content: space-between;
+  }
   // .feedback__item
 
   &__item {
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+      text-align: start;
+    }
     &:first-child {
       display: grid;
+      @media screen and (max-width: 767px) {
+        display: block;
+      }
       .feedback__link:nth-child(2) {
         margin-bottom: 18px;
       }
     }
     &:nth-child(3) {
-      margin-bottom: 52px;
       .feedback__subtitle:nth-child(2) {
         margin-bottom: 18px;
       }
@@ -204,8 +259,15 @@
     font-size: 36px;
     line-height: 45px;
     letter-spacing: 0em;
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+      font-size: 24px;
+      line-height: 30px;
+    }
+    @media screen and (max-width: 767px) {
+      font-size: 18px;
+      line-height: 23px;
+    }
   }
-
   // .feedback__link
 
   &__link {
@@ -216,6 +278,17 @@
     font-size: 18px;
     line-height: 20px;
     letter-spacing: 0em;
+    @media screen and (max-width: 767px) {
+      display: flex;
+      margin-left: 0px;
+
+      font-size: 16px;
+      line-height: 20px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
     &--margin {
       margin-right: auto;
       margin-left: 0px;
@@ -238,5 +311,8 @@
   &__img {
     position: relative;
     right: -90px;
+    @media screen and (max-width: 1439px) {
+      display: none;
+    }
   }
 }

@@ -6,6 +6,21 @@
     margin-left: 117px;
     margin-bottom: 24px;
     font-size: 45px;
+    @media screen and (max-width: 767px) {
+      margin: 0px;
+      margin-bottom: 16px;
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 30px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+      margin: 0px;
+      margin-bottom: 16px;
+      margin-left: 32px;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 45px;
+    }
   }
 
   // .order__list
@@ -16,6 +31,13 @@
     grid-template-areas:
       'a a b'
       'a a c';
+    @media screen and (max-width: 767px) {
+      margin: 0px;
+      display: block;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+      margin: 0px;
+    }
   }
 
   // .order__item
@@ -27,6 +49,13 @@
     &:nth-child(2) {
       margin-bottom: 40px;
       grid-area: b;
+      @media screen and (max-width: 767px) {
+        margin: 0px;
+      }
+      @media screen and (min-width: 768px) and (max-width: 1439px) {
+        margin: auto;
+        margin-left: 0px;
+      }
     }
     &:nth-child(3) {
       grid-area: c;
@@ -37,6 +66,15 @@
 
   &__img {
     border-radius: 15px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 16px;
+      width: 280px;
+      margin: auto;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+      margin-left: 32px;
+      width: 336px;
+    }
   }
 
   // .order__subtitle
@@ -50,14 +88,32 @@
     font-size: 18px;
     line-height: 23px;
     letter-spacing: 0em;
+    @media screen and (max-width: 767px) {
+      width: 280px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+      width: 336px;
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
   &__subtitle--margin {
     margin-bottom: 24px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 16px;
+      margin-top: 16px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+      margin-bottom: 0px;
+    }
   }
 }
 .model {
   display: flex;
   justify-content: end;
+  @media screen and (max-width: 1439px) {
+    display: none;
+  }
   // .model__item
 
   &__item {
@@ -85,5 +141,12 @@
 
 .order-section {
   padding-top: 190px;
-  margin-bottom: 100px;
+  padding-bottom: 100px;
+  @media screen and (max-width: 767px) {
+    padding-top: 92px;
+    padding-bottom: 40px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    padding: 104px 0px 40px;
+  }
 }

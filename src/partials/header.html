@@ -1,7 +1,35 @@
 <header class="header">
   <div class="container header-section header-lock">
     <a class="header__link" href="./index.html">
-      <img class="header__logo" src="./images/logo.png" alt="logo" />
+      <picture>
+        <source
+          srcset="
+            ./images/main-page/logo-mobile.png    1x,
+            ./images/main-page/logo-mobile@2x.png 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <source
+          srcset="
+            ./images/main-page/logo-tablet.png    1x,
+            ./images/main-page/logo-tablet@2x.png 2x
+          "
+          media="(min-width: 768px) and (max-width: 1439px)"
+        />
+        <source
+          srcset="
+            ./images/main-page/logo.png    1x,
+            ./images/main-page/logo@2x.png 2x
+          "
+          media="(min-width: 1400px)"
+        />
+        <img
+          loading="lazy"
+          class="header__logo"
+          src="./images/main-page/logo.png"
+          alt="logo"
+        />
+      </picture>
     </a>
     <div class="modal-window" data-menu>
       <nav class="site-nav">
@@ -41,11 +69,6 @@
           </li>
         </ul>
       </nav>
-      <a class="mobile" href="">
-        <svg class="mobile__icon">
-          <use href="./images/svg/sprite.svg#icon-arrow"></use>
-        </svg>
-      </a>
     </div>
     <button class="btn-modal" type="button" data-menu-button>
       <svg class="modal-icon">

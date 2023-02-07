@@ -49,6 +49,9 @@
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0.01em;
+    &:hover {
+      color: $blue-text-color;
+    }
   }
 }
 
@@ -79,6 +82,9 @@
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0em;
+    &:hover {
+      color: $blue-text-color;
+    }
   }
 }
 .footer-contact {
