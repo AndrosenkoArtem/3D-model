@@ -1,5 +1,5 @@
 (() => {
-  const menuHeader = document.querySelector('.header-lock');
+  const menuHeader = document.querySelector(".header-lock");
   window.onscroll = function () {
     scrollFunction();
   };
@@ -9,9 +9,12 @@
       document.body.scrollTop > 30 ||
       document.documentElement.scrollTop > 30
     ) {
-      menuHeader.classList.add('compact');
+      menuHeader.classList.add("compact");
     } else {
-      menuHeader.classList.remove('compact');
+      menuHeader.classList.remove("compact");
     }
   }
 })();
+/**
+ *
+ */
