@@ -1,0 +1,32 @@
+{
+  "name": "3d-model",
+  "version": "2.0.0",
+  "description": "",
+  "homepage": "https://AndrosenkoArtem.github.io/3D-model/",
+  "scripts": {
+    "start": "parcel src/*.html --no-cache",
+    "build": "parcel build src/*.html --public-url /3D-model/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndrosenkoArtem/3D-model.git"
+  },
+  "keywords": [],
+  "author": "Androsenko Artem <yixyxtstt@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndrosenkoArtem/3D-model/issues"
+  },
+  "dependencies": {
+    "lightningcss": "^1.19.0",
+    "modern-normalize": "^1.1.0",
+    "nice-select2": "^2.1.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0",
+    "parcel": "^2.8.3",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^1.7.4"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}

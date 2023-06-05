@@ -1,0 +1,112 @@
+.photorealistic {
+  // .photo__title
+
+  &__title {
+    width: 842px;
+    margin: 0;
+    margin-left: 117px;
+    margin-bottom: 40px;
+    font-size: 36px;
+    line-height: 45.25px;
+    @media screen and (max-width: 767px) {
+      margin: 0px;
+      margin-bottom: 16px;
+      width: 270px;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0em;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+      width: 628px;
+      margin: 0px;
+      margin-bottom: 24px;
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+
+  // .photo__list
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 40px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+      margin-bottom: 60px;
+    }
+  }
+
+  // .photo__item
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 32px;
+      @media screen and (max-width: 767px) {
+        margin: 0px;
+      }
+    }
+    &:last-child {
+      width: 320px;
+      @media screen and (max-width: 1439px) {
+        width: auto;
+      }
+    }
+    &:nth-child(2n) {
+      @media screen and (max-width: 767px) {
+        margin-left: 20px;
+      }
+    }
+    &:nth-child(-n + 2) {
+      @media screen and (max-width: 767px) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  // .photo__img
+
+  &__img {
+    @media screen and (max-width: 767px) {
+      width: 130px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+      width: 152px;
+    }
+  }
+
+  // .photo__button
+
+  &__button {
+    display: block;
+    margin: auto;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 30.5px;
+    color: $blue-text-color;
+    background-color: #f5f5fa;
+    font-family: $cera700;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    box-shadow: -5px -5px 10px 0px #ffffff, 5px 5px 10px 0px #48799640,
+      10px 10px 20px 0px #4879961a, -10px -10px 20px 0px #ffffff;
+    &:hover {
+      color: #f5f5fa;
+      background-color: $blue-text-color;
+    }
+    @media screen and (max-width: 767px) {
+      margin-bottom: 0px;
+      padding: 16px 25px;
+    }
+  }
+}
+.photorealistic-section {
+  padding-bottom: 80px;
+  @media screen and (max-width: 1439px) {
+    padding-bottom: 60px;
+  }
+}

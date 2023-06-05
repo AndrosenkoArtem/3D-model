@@ -1,0 +1,129 @@
+<section class="form">
+  <div class="container form-section">
+    <h2 class="form__title">ЗВ’ЯЖІТЬСЯ З НАМИ</h2>
+    <form name="my information" autocomplete="on" novalidate>
+      <ul class="form__list" role="group">
+        <li class="form__item">
+          <input
+            class="form__input"
+            name="name"
+            type="text"
+            id="name"
+            placeholder=" "
+          />
+          <label class="form__label" for="name">Ім’я</label>
+        </li>
+        <li class="form__item">
+          <input
+            class="form__input"
+            name="email"
+            type="email"
+            id="email"
+            placeholder=" "
+          />
+          <label class="form__label" for="email">Email</label>
+        </li>
+        <li class="form__item">
+          <select id="a-select" class="select-style">
+            <option class="option-style" value="5">Види пластика</option>
+            <option class="option-style" value="1">полімер TPU</option>
+            <option class="option-style" value="2">PETG</option>
+            <option class="option-style" value="3">пластик PP</option>
+            <option class="option-style" value="4">HIPS</option>
+            <option class="option-style" value="5">ABS</option>
+            <option class="option-style" value="6">полімер HIPS</option>
+          </select>
+        </li>
+        <!-- <label class="form__label" for="">Види пластика</label> -->
+        <li class="form__item">
+          <select id="b-select" class="select-style">
+            <option class="option-style" value="5">Якість друку</option>
+            <option class="option-style" value="1">300 мікрон</option>
+            <option class="option-style" value="2">200 мікрон</option>
+            <option class="option-style" value="3">100 мікрон</option>
+          </select>
+        </li>
+        <!-- <label class="form__label" for="quality">Якість друку</label> -->
+        <li class="form__item">
+          <select id="c-select" class="select-style">
+            <option class="option-style" value="5">Колір</option>
+            <option class="option-style" value="1">Червоний</option>
+            <option class="option-style" value="2">Жовтий</option>
+            <option class="option-style" value="3">Синій</option>
+            <option class="option-style" value="4">Зелений</option>
+            <option class="option-style" value="5">Білий</option>
+            <option class="option-style" value="6">Чорний</option>
+          </select>
+        </li>
+        <!-- <label class="form__label" for="color">Колір</label> -->
+
+        <li class="form__item">
+          <textarea
+            class="contact-us__area contact-us__area--position"
+            name="textarea"
+            id="textarea"
+            placeholder="Залишіть своє повідомлення"
+          ></textarea>
+          <label
+            class="contact-us__area-label contact-us__area-label--position"
+            for="textarea"
+            >Повідомлення</label
+          >
+          <input
+            class="contact-us__input-icon contact-us__input-icon--position"
+            name="clip"
+            type="file"
+            id="clip"
+          />
+          <label for="clip">
+            <svg class="contact-us__icon contact-us__icon--position">
+              <use href="./images/svg/sprite.svg#icon-clip"></use></svg
+          ></label>
+          <p class="contact-us__clip">
+            *Прикріпіть зображення/креслення/STL/Obj/CAD-модель
+          </p>
+        </li>
+        <li class="form__item">
+          <button class="contact-us__button" type="submit">ВІДПРАВИТИ</button>
+        </li>
+      </ul>
+    </form>
+    <ul class="feedback">
+      <li class="feedback__item">
+        <h3 class="feedback__title">PHONES</h3>
+        <a class="feedback__link" href="tel:+380957384551"
+          >+38 (095) -73-84-551</a
+        >
+        <a class="feedback__link" href="tel:+380980025235"
+          >+38 (098) -00-25-235</a
+        >
+      </li>
+      <li class="feedback__item">
+        <h3 class="feedback__title">EMAIL</h3>
+        <a class="feedback__link" href="mailto:3dfreedom.info@gmail.com"
+          >3dfreedom.info@gmail.com</a
+        >
+      </li>
+      <li class="feedback__item">
+        <h3 class="feedback__title">Робочий час</h3>
+        <p class="feedback__subtitle">Пн-пт: з 8:00 до 19:00</p>
+        <p class="feedback__subtitle">Сб, Нд: з 10:00 до 17:00</p>
+      </li>
+      <picture>
+        <source
+          srcset="
+            ./images/take-order/main-order.png    1x,
+            ./images/take-order/main-order@2x.png 2x
+          "
+          media="(min-width: 1400px)"
+        />
+        <img
+          loading="lazy"
+          class="feedback__img"
+          src="./images/take-order/main-order.png"
+          alt="main-order"
+        />
+      </picture>
+    </ul>
+  </div>
+</section>

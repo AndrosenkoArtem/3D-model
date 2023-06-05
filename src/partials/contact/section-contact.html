@@ -1,0 +1,130 @@
+<section class="contact">
+  <div class="container contact-section">
+    <h2 class="contact__title">КОНТАКТИ</h2>
+    <ul class="contact__list">
+      <li class="contact__item">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/L68NIOkjY6c"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </li>
+      <li class="contact__item">
+        <p class="contact__subtitle contact__subtitle--margin">
+          Людина уперше побачивши процес 3D друку може легко захопитися
+          спостереженням за цим процесом не на десяток хвилин.
+        </p>
+        <p class="contact__subtitle contact__subtitle--margin">
+          Наша команда створює timelapse відео що б ви могли краще ознайомитися
+          з технологією 3D друку і просто помилуватися красою цього процесу.
+        </p>
+        <p class="contact__subtitle">Приємного перегляду!</p>
+        <picture>
+          <source
+            srcset="
+              ./images/take-order/emoji.png    1x,
+              ./images/take-order/emoji@2x.png 2x
+            "
+            media="(max-width: 1439px)"
+          />
+          <source
+            srcset="
+              ./images/take-order/emoji-desctop.png    1x,
+              ./images/take-order/emoji-desctop@2x.png 2x
+            "
+            media="(min-width: 1400px)"
+          />
+          <img
+            class="contact__icon"
+            src="./images/take-order/emoji-desctop.png"
+            alt=""
+          />
+        </picture>
+      </li>
+    </ul>
+    <div class="contact__group">
+      <ul class="feedback feedback--margin">
+        <li class="feedback__item feedback__item--margin">
+          <h3 class="feedback__title">PHONES</h3>
+          <a
+            class="feedback__link feedback__link--margin"
+            href="tel:+380957384551"
+            >+38 (095) -73-84-551</a
+          >
+          <a
+            class="feedback__link feedback__link--margin"
+            href="tel:+380980025235"
+            >+38 (098) -00-25-235</a
+          >
+        </li>
+        <li class="feedback__item feedback__item--margin">
+          <h3 class="feedback__title">EMAIL</h3>
+          <a class="feedback__link" href="mailto:3dfreedom.info@gmail.com"
+            >3dfreedom.info@gmail.com</a
+          >
+        </li>
+        <li class="feedback__item feedback__item--margin">
+          <h3 class="feedback__title">Робочий час</h3>
+          <p class="feedback__subtitle">Пн-пт: з 8:00 до 19:00</p>
+          <p class="feedback__subtitle">Сб, Нд: з 10:00 до 17:00</p>
+        </li>
+      </ul>
+      <form name="contact-us">
+        <h3 class="contact-us__title">ЗВ’ЯЖІТЬСЯ З НАМИ</h3>
+        <ul class="contact-us" role="group">
+          <li class="contact-us__item">
+            <input
+              class="contact-us__input"
+              name="user-name"
+              type="text"
+              id="user-name"
+              placeholder=" "
+            />
+            <label class="contact-us__label" for="user-name">Ім’я</label>
+          </li>
+          <li class="contact-us__item">
+            <input
+              class="contact-us__input"
+              name="user-email"
+              type="email"
+              id="user-email"
+              placeholder=" "
+            />
+            <label class="contact-us__label" for="user-email">Email</label>
+          </li>
+          <li class="contact-us__item">
+            <textarea
+              class="contact-us__area"
+              name="user-textarea"
+              id="user-textarea"
+              placeholder="Залишіть своє повідомлення"
+            ></textarea>
+            <label class="contact-us__area-label" for="user-textarea"
+              >Повідомлення</label
+            >
+            <p class="contact-us__clip">
+              *Прикріпіть зображення/креслення/STL/Obj/CAD-модель
+            </p>
+            <input
+              class="contact-us__input-icon"
+              name="user-clip"
+              type="file"
+              id="user-clip"
+            />
+            <label for="user-clip">
+              <svg class="contact-us__icon">
+                <use href="./images/svg/sprite.svg#icon-clip"></use></svg
+            ></label>
+          </li>
+          <li class="contact-us__item">
+            <button class="contact-us__button" type="submit">ВІДПРАВИТИ</button>
+          </li>
+        </ul>
+      </form>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,123 @@
+.index-main {
+  // background-image: url(../images/main-page/decor-page-main.png);
+  // background-position-x: 50%;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  @media screen and (max-width: 767px) {
+    background-image: url(../images/main-page/decor-main-page-mobile.png);
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/main-page/decor-main-page-mobile@2x.png);
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 929px) {
+    background-image: url(../images/main-page/decor-main-page-tablet.png);
+    background-position-x: 50%;
+    background-position-y: -5px;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/main-page/decor-main-page-tablet@2x.png);
+    }
+  }
+  @media screen and (min-width: 930px) {
+    background-image: url(../images/main-page/decor-main-page.png);
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/main-page/decor-main-page@2x.png);
+    }
+  }
+}
+.page-main {
+  @media screen and (max-width: 767px) {
+    background-image: url(../images/main-page/decor-main-page-mobile.png);
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/main-page/decor-main-page-mobile@2x.png);
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    background-image: url(../images/modeling/decor-page-tablet.png);
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/modeling/decor-page-tablet@2x.png);
+    }
+  }
+  @media screen and (min-width: 1400px) {
+    background-image: url(../images/modeling/decor-page.png);
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/modeling/decor-page@2x.png);
+    }
+  }
+}
+.modal-window {
+  @media screen and (max-width: 767px) {
+    background-image: url(../images/main-page/decor-mobile.png);
+    background-position-x: 50%;
+    background-position-y: -50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/main-page/decor-mobile@2x.png);
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    background-image: url(../images/main-page/decor-tablet.png);
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/main-page/decor-tablet@2x.png);
+    }
+  }
+}
+
+// @media screen and (min-width: 768px) and (max-width: 1439px) {
+//         @media screen and (min-device-pixel-ratio: 2),
+//         screen and (min-resolution: 192dpi),
+//         screen and (min-resolution: 2dppx) {
+//             url('../images/hero-background-tablet.jpg');
+//         }
+//     }
+// @media screen and (min-width: 1440px) {
+//         @media screen and (min-device-pixel-ratio: 2),
+//         screen and (min-resolution: 192dpi),
+//         screen and (min-resolution: 2dppx) {
+//             url('../images/hero-background-tablet.jpg');
+//         }
+// }

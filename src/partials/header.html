@@ -1,0 +1,110 @@
+<header class="header">
+  <div class="container header-section header-lock">
+    <a class="header__link" href="./index.html">
+      <picture>
+        <source
+          srcset="
+            ./images/main-page/logo-mobile.png    1x,
+            ./images/main-page/logo-mobile@2x.png 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <source
+          srcset="
+            ./images/main-page/logo-tablet.png    1x,
+            ./images/main-page/logo-tablet@2x.png 2x
+          "
+          media="(min-width: 768px) and (max-width: 1439px)"
+        />
+        <source
+          srcset="
+            ./images/main-page/logo.png    1x,
+            ./images/main-page/logo@2x.png 2x
+          "
+          media="(min-width: 1400px)"
+        />
+        <img
+          loading="lazy"
+          class="header__logo"
+          src="./images/main-page/logo.png"
+          alt="logo"
+        />
+      </picture>
+    </a>
+    <div class="modal-window" data-menu>
+      <nav class="site-nav">
+        <ul class="site-nav__list">
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="./index.html">Головна</a>
+          </li>
+          <!--  -->
+          <!-- <li class="site-nav__item">
+          <a class="site-nav__link" href="">Послуги</a>
+        </li> -->
+          <li class="site-nav__item">
+            <div class="dropdown">
+              <button id="btnDropdown" class="dropdown__button">
+                Послуги
+                <svg class="dropdown__icon">
+                  <use href="./images/svg/sprite.svg#icon-up"></use>
+                </svg>
+              </button>
+              <div id="myDropdown" class="dropdown__content">
+                <a class="dropdown__link" href="./modeling.html"
+                  >3D Моделювання</a
+                >
+                <a class="dropdown__link" href="./scanning.html"
+                  >3D Сканування</a
+                >
+                <a class="dropdown__link" href="./printing.html">3D Друк</a>
+              </div>
+            </div>
+          </li>
+          <!--  -->
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="./take-order.html">Замовити</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="./contact.html">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <button class="btn-modal" type="button" data-menu-button>
+      <svg class="modal-icon">
+        <use
+          class="modal-icon__close"
+          width="24"
+          height="24"
+          href="./images/svg/sprite.svg#icon-menu-close"
+        ></use>
+        <use
+          class="modal-icon__open"
+          width="32"
+          height="18"
+          href="./images/svg/sprite.svg#icon-menu-open"
+        ></use>
+      </svg>
+    </button>
+    <svg class="mobile-tel">
+      <use href="./images/svg/sprite.svg#mobile-tel"></use>
+    </svg>
+    <button class="header__button" type="button">ENG</button>
+    <ul class="tel">
+      <li class="tel__item">
+        <a class="tel__link" href="tel:+380936432288">
+          <svg class="tel__svg">
+            <use href="./images/svg/sprite.svg#tel"></use></svg
+          >+38 (093) 643 22 88</a
+        >
+      </li>
+      <li class="tel__item">
+        <a class="tel__link" href="tel:+380503454423">
+          <svg class="tel__svg">
+            <use href="./images/svg/sprite.svg#tel"></use></svg
+          >+38 (050) 345 44 23</a
+        >
+      </li>
+    </ul>
+  </div>
+</header>

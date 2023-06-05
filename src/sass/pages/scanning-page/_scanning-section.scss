@@ -1,0 +1,125 @@
+.scanning {
+  // .scanning__title
+
+  &__title {
+    margin: 0;
+    margin-bottom: 24px;
+    margin-left: 117px;
+    @media screen and (max-width: 767px) {
+      margin: 0px;
+      margin-bottom: 16px;
+      font-size: 24px;
+      line-height: 30px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+      margin: 0px;
+      margin-bottom: 16px;
+
+      font-size: 36px;
+      line-height: 45px;
+      letter-spacing: 0em;
+    }
+  }
+
+  // .scanning__list
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 117px;
+    @media screen and (max-width: 767px) {
+      display: grid;
+      margin: 0px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+      position: relative;
+      display: grid;
+      margin: 0px;
+    }
+  }
+
+  // .scanning__item
+
+  &__item {
+    &:nth-child(3) {
+      margin-top: 24px;
+      @media screen and (max-width: 767px) {
+        margin: 0px;
+        margin-bottom: 20px;
+      }
+      @media screen and (min-width: 768px) and (max-width: 1439px) {
+        margin: 0px;
+        grid-row: 2;
+      }
+    }
+    &:nth-child(2) {
+      margin-left: 72px;
+      @media screen and (max-width: 1439px) {
+        margin: 0px;
+        grid-row: 3;
+      }
+    }
+    &:last-child {
+      position: relative;
+      top: -37px;
+      left: 72px;
+      @media screen and (max-width: 767px) {
+        top: auto;
+        bottom: 0px;
+        left: 0px;
+      }
+      @media screen and (min-width: 768px) and (max-width: 1439px) {
+        position: absolute;
+        top: auto;
+        bottom: 30px;
+        left: auto;
+        right: -26px;
+      }
+    }
+    &:nth-child(1),
+    &:nth-child(3) {
+      @media screen and (max-width: 1439px) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  // .scanning__subtitle
+
+  &__subtitle {
+    margin: 0;
+    width: 515px;
+    font-family: $cera300;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 23px;
+    letter-spacing: 0em;
+    @media screen and (max-width: 767px) {
+      width: 280px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  // .scanning__img
+
+  &__img {
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+      width: 241px;
+    }
+  }
+}
+.scanning-section {
+  padding-top: 190px;
+  padding-bottom: 22px;
+  @media screen and (max-width: 767px) {
+    padding-top: 92px;
+    padding-bottom: 40px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    padding-top: 104px;
+    padding-bottom: 40px;
+  }
+}

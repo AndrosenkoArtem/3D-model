@@ -1,0 +1,292 @@
+body {
+  background-color: $background-color;
+}
+.header-lock {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  width: 100%;
+}
+.header-lock.compact {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: auto;
+  background-color: $background-color;
+  //animation header in .compact (header)
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.header {
+  // .header__link
+
+  //   &__link {
+  //   }
+
+  // .header__img
+
+  //   &__logo {
+  &__logo {
+    @media screen and (max-width: 767px) {
+      width: 101px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+      width: 125px;
+    }
+  }
+  //   }
+
+  // .header__button
+
+  &__button {
+    margin-left: 130px;
+    border: none;
+    color: #bdbdbd;
+    background-color: rgba(0, 0, 0, 0);
+    font-family: $font700;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    @media screen and (max-width: 767px) {
+      margin-left: 17px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+      margin-left: 0px;
+    }
+  }
+}
+// .container {
+// }
+.header-section {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 54px;
+  @media screen and (max-width: 1439px) {
+    padding-top: 28px;
+    padding-bottom: 0px;
+    justify-content: center;
+  }
+}
+.site-nav {
+  // .site-nav__list
+
+  &__list {
+    display: flex;
+    margin-left: 258px;
+    @media screen and (max-width: 1439px) {
+      margin: 0px;
+      display: block;
+    }
+  }
+  // .site-nav__link
+  &__link {
+    color: $text-color;
+    font-family: $font400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.01em;
+    &:hover {
+      color: $blue-text-color;
+    }
+  }
+  // .site-nav__item
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 56px;
+    }
+    @media screen and (max-width: 1439px) {
+      text-align: center;
+      &:nth-child(1) a {
+        color: #ffff;
+        font-family: $cera700;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-shadow: rgb(72, 121, 150) 1px 0px 0px,
+          rgb(72, 121, 150) 0.540302px 0.841471px 0px,
+          rgb(72, 121, 150) -0.416147px 0.909297px 0px,
+          rgb(72, 121, 150) -0.989992px 0.14112px 0px,
+          rgb(72, 121, 150) -0.653644px -0.756802px 0px,
+          rgb(72, 121, 150) 0.283662px -0.958924px 0px,
+          rgb(72, 121, 150) 0.96017px -0.279415px 0px;
+      }
+      &:not(:last-child) {
+        margin: auto;
+        @media screen and (max-width: 1439px) {
+          margin-bottom: 24px;
+        }
+      }
+      &:nth-child(3) a,
+      &:nth-child(4) a {
+        color: $blue-text-color;
+        font-family: $cera700;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0em;
+      }
+    }
+  }
+  .dropdown {
+    text-align: center;
+    position: relative;
+    @media screen and (max-width: 1439px) {
+      display: contents;
+    }
+    // .dropdown__button
+
+    &__button {
+      padding: 0px;
+      border: none;
+      background-color: #0000;
+      color: #2b2b2b;
+      letter-spacing: 0.01em;
+      font-family: $font400;
+      font-size: 18px;
+      line-height: 21px;
+      &:hover {
+        color: $blue-text-color;
+      }
+      @media screen and (max-width: 1439px) {
+        display: none;
+        margin-bottom: 24px;
+        color: $blue-text-color;
+        font-family: $cera700;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30px;
+      }
+    }
+
+    // .dropdown__link
+
+    &__link {
+      display: flex;
+      justify-content: center;
+      color: $text-color;
+      letter-spacing: 0.01em;
+      font-family: $font400;
+      font-size: 16px;
+      line-height: 21.59px;
+      transform: translateY(-400%);
+      // transition: transform 500ms ease, background-color 500ms ease,
+      //   box-shadow 500ms ease;
+      transition: all 500ms ease;
+      background-color: #0000;
+      // padding: 5px 0px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 150px;
+      &:hover {
+        color: $blue-text-color;
+      }
+      &:last-child {
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+      }
+      @media screen and (max-width: 1439px) {
+        display: inline;
+        transform: translateY(0px);
+        width: auto;
+        color: $blue-text-color;
+        font-family: $cera400;
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: 0em;
+        &:not(:last-child) {
+          margin-bottom: 24px;
+        }
+        &::before {
+          content: '';
+          position: absolute;
+          bottom: 11px;
+          left: -23px;
+          background-image: url(../images/svg/list-style.svg);
+          background-repeat: no-repeat;
+          width: 7px;
+          height: 7px;
+          border-radius: 3px 0px;
+        }
+      }
+    }
+    &__content {
+      position: absolute;
+      overflow: hidden;
+      text-align: center;
+      left: -40px;
+      @media screen and (max-width: 1439px) {
+        display: grid;
+      }
+      .header-lock.compact & {
+        .dropdown__link {
+          @media screen and (min-widht: 1440px) {
+            background-color: rgba(72, 121, 150, 0.7);
+            color: $background-color;
+          }
+        }
+      }
+      @media screen and (max-width: 1439px) {
+        position: static;
+      }
+    }
+    &__content.show {
+      .header-lock.compact & {
+        .dropdown__link {
+          color: $background-color;
+          background-color: rgba(72, 121, 150, 0.7);
+        }
+      }
+
+      .dropdown__link {
+        background-color: #0000;
+        transform: translateY(0);
+      }
+    }
+    &__icon {
+      vertical-align: middle;
+      width: 12px;
+      height: 6px;
+      @media screen and (max-width: 1439px) {
+        display: none;
+      }
+    }
+  }
+}
+.tel {
+  margin-left: 106px;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    margin-left: 40px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 791px) {
+    margin-left: 35px;
+  }
+  // .tel__item
+
+  //   &__item {
+  //   }
+  // .tel__svg
+  &__svg {
+    margin-right: 8px;
+    width: 14px;
+    height: 14px;
+  }
+  // .tel__link
+
+  &__link {
+    color: $text-color;
+    font-family: $cera400;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    .tel__item {
+      display: none;
+    }
+  }
+}
